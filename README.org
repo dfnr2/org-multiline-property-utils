@@ -20,7 +20,9 @@ mode functions but tailored specifically for multiline property drawers.
 ** Features
 
 - Intelligent wrapping of multiline property values that respects =fill-column=
-- Preservation of newline characters (=\n=) in property values
+- Respects and preserves newline characters (=\n=) in property values. This is
+  useful when a property value contains paragraphs or enumerated items, for
+  example.
 - Easy insertion of property continuation lines
 - Seamless integration with existing Org mode keybindings
 
