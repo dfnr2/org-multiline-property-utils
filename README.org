@@ -4,7 +4,7 @@
 
 A couple of convenient utilities for working with multiline properties in Org mode.
 
-* Overview
+** Overview
 
 =org-multiline-property-utils= provides two main functions to improve the
 handling of multiline properties in Org mode:
@@ -17,16 +17,16 @@ handling of multiline properties in Org mode:
 These functions are designed to provide behavior analogous to the default Org
 mode functions but tailored specifically for multiline property drawers.
 
-* Features
+** Features
 
 - Intelligent wrapping of multiline property values that respects =fill-column=
 - Preservation of newline characters (=\n=) in property values
 - Easy insertion of property continuation lines
 - Seamless integration with existing Org mode keybindings
 
-* Installation
+** Installation
 
-** For Doom Emacs Users
+*** For Doom Emacs Users
 
 1. Save =org-multiline-property-utils.el= in your Doom Emacs lisp directory:
    - Typically =~/.doom.d/lisp/= or =~/.config/doom/lisp/=
@@ -43,7 +43,7 @@ mode functions but tailored specifically for multiline property drawers.
 
 3. Restart Doom Emacs or reload your configuration.
 
-** For Regular Emacs Users
+*** For Regular Emacs Users
 
 1. Save =org-multiline-property-utils.el= in a directory in your Emacs load path.
 
@@ -58,7 +58,7 @@ mode functions but tailored specifically for multiline property drawers.
 
 3. Restart Emacs or evaluate the configuration.
 
-* Usage
+** Usage
 
 After installation, the following key bindings will be available in Org mode:
 
@@ -72,9 +72,9 @@ After installation, the following key bindings will be available in Org mode:
 These functions only modify their behavior when used within property drawers.
 Outside of property drawers, they fall back to their default Org mode behavior.
 
-* Examples
+** Examples
 
-** Wrapping a Multiline Property
+*** Wrapping a Multiline Property
 
 Before:
 #+BEGIN_EXAMPLE
@@ -89,7 +89,7 @@ After =M-q=:
 :LONG_PROPERTY+: new line.
 #+END_EXAMPLE
 
-** Inserting a Continuation Line
+*** Inserting a Continuation Line
 
 Starting with:
 #+BEGIN_EXAMPLE
@@ -102,11 +102,11 @@ After pressing =C-<return>=:
 :PROPERTY+:
 #+END_EXAMPLE
 
-* Contributing
+** Contributing
 
 Contributions to improve =org-multiline-property-utils= are welcome. Please feel
 free to submit issues or pull requests on the project's GitHub page.
 
-* License
+** License
 
 This project is licensed under the GNU General Public License v3.0 or later.
